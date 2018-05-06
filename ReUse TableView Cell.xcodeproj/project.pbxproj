@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		55F784B4209C18450025ADA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F784B3209C18450025ADA0 /* AppDelegate.swift */; };
-		55F784B6209C18450025ADA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F784B5209C18450025ADA0 /* ViewController.swift */; };
 		55F784B9209C18450025ADA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F784B7209C18450025ADA0 /* Main.storyboard */; };
 		55F784BB209C18470025ADA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F784BA209C18470025ADA0 /* Assets.xcassets */; };
 		55F784BE209C18470025ADA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F784BC209C18470025ADA0 /* LaunchScreen.storyboard */; };
+		55F784CB209CE3FB0025ADA0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F784CA209CE3FB0025ADA0 /* TableViewController.swift */; };
+		55F784CD209CE5390025ADA0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F784CC209CE5390025ADA0 /* Default-568h@2x.png */; };
+		55F784D3209CE7A80025ADA0 /* SpongeBob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F784D2209CE7A80025ADA0 /* SpongeBob.swift */; };
+		55F784D5209CF2440025ADA0 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F784D4209CF2440025ADA0 /* MyCustomCell.xib */; };
+		55F784D7209CF2B30025ADA0 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F784D6209CF2B30025ADA0 /* MyCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55F784B0209C18450025ADA0 /* ReUse TableView Cell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReUse TableView Cell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F784B3209C18450025ADA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55F784B5209C18450025ADA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55F784B8209C18450025ADA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F784BA209C18470025ADA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F784BD209C18470025ADA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F784BF209C18470025ADA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F784CA209CE3FB0025ADA0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		55F784CC209CE5390025ADA0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		55F784D2209CE7A80025ADA0 /* SpongeBob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpongeBob.swift; sourceTree = "<group>"; };
+		55F784D4209CF2440025ADA0 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		55F784D6209CF2B30025ADA0 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 		55F784A7209C18450025ADA0 = {
 			isa = PBXGroup;
 			children = (
+				55F784CC209CE5390025ADA0 /* Default-568h@2x.png */,
 				55F784B2209C18450025ADA0 /* ReUse TableView Cell */,
 				55F784B1209C18450025ADA0 /* Products */,
 			);
@@ -54,14 +63,57 @@
 		55F784B2209C18450025ADA0 /* ReUse TableView Cell */ = {
 			isa = PBXGroup;
 			children = (
-				55F784B3209C18450025ADA0 /* AppDelegate.swift */,
-				55F784B5209C18450025ADA0 /* ViewController.swift */,
-				55F784B7209C18450025ADA0 /* Main.storyboard */,
-				55F784BA209C18470025ADA0 /* Assets.xcassets */,
-				55F784BC209C18470025ADA0 /* LaunchScreen.storyboard */,
-				55F784BF209C18470025ADA0 /* Info.plist */,
+				55F784D1209CE7980025ADA0 /* Data Model */,
+				55F784CE209CE5CD0025ADA0 /* Cells */,
+				55F784C8209CE24B0025ADA0 /* Controllers */,
+				55F784C7209CE23A0025ADA0 /* Views */,
+				55F784C9209CE2530025ADA0 /* Supporting Files */,
 			);
 			path = "ReUse TableView Cell";
+			sourceTree = "<group>";
+		};
+		55F784C7209CE23A0025ADA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55F784B7209C18450025ADA0 /* Main.storyboard */,
+				55F784BC209C18470025ADA0 /* LaunchScreen.storyboard */,
+				55F784D4209CF2440025ADA0 /* MyCustomCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55F784C8209CE24B0025ADA0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				55F784CA209CE3FB0025ADA0 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		55F784C9209CE2530025ADA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F784B3209C18450025ADA0 /* AppDelegate.swift */,
+				55F784BA209C18470025ADA0 /* Assets.xcassets */,
+				55F784BF209C18470025ADA0 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55F784CE209CE5CD0025ADA0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				55F784D6209CF2B30025ADA0 /* MyCustomCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		55F784D1209CE7980025ADA0 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				55F784D2209CE7A80025ADA0 /* SpongeBob.swift */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +176,8 @@
 			files = (
 				55F784BE209C18470025ADA0 /* LaunchScreen.storyboard in Resources */,
 				55F784BB209C18470025ADA0 /* Assets.xcassets in Resources */,
+				55F784CD209CE5390025ADA0 /* Default-568h@2x.png in Resources */,
+				55F784D5209CF2440025ADA0 /* MyCustomCell.xib in Resources */,
 				55F784B9209C18450025ADA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F784B6209C18450025ADA0 /* ViewController.swift in Sources */,
+				55F784D3209CE7A80025ADA0 /* SpongeBob.swift in Sources */,
 				55F784B4209C18450025ADA0 /* AppDelegate.swift in Sources */,
+				55F784D7209CF2B30025ADA0 /* MyCustomCell.swift in Sources */,
+				55F784CB209CE3FB0025ADA0 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3D7B5BPEZ;
-				INFOPLIST_FILE = "ReUse TableView Cell/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ReUse TableView Cell/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3D7B5BPEZ;
-				INFOPLIST_FILE = "ReUse TableView Cell/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ReUse TableView Cell/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
